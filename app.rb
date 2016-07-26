@@ -12,9 +12,14 @@ binding.pry
 
 puts "end of app"
 
+
 get '/pokemons' do
   @pokemons = Pokemon.all
   erb :"pokemons/index"
+end
+
+get 'pokemons/new' do
+  erb :"pokemons/new"
 end
 
 get '/' do
