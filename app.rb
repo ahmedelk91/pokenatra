@@ -51,3 +51,7 @@ end
 get '/' do
   redirect "/pokemons"
 end
+
+get '/public' do
+  erb :"public/"
+end
